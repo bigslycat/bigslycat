@@ -1,0 +1,7 @@
+{
+  "name": "bigslycat",
+  "packageManager": "yarn@4.3.0",
+  "workspaces": [
+    "packages/*"
+  ]
+}
