@@ -13,11 +13,16 @@ const RAW_RUNTIME_STATE =
     {\
       "name": "bigslycat",\
       "reference": "workspace:."\
+    },\
+    {\
+      "name": "@bigslycat/prettier",\
+      "reference": "workspace:packages/prettier"\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
+    ["@bigslycat/prettier", ["workspace:packages/prettier"]],\
     ["bigslycat", ["workspace:."]]\
   ],\
   "fallbackPool": [\
@@ -27,6 +32,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@bigslycat/prettier", "workspace:packages/prettier"],\
           ["@yarnpkg/sdks", "npm:3.1.3"],\
           ["prettier", "npm:3.3.2"],\
           ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
@@ -42,6 +48,17 @@ const RAW_RUNTIME_STATE =
           ["grapheme-splitter", "npm:1.0.4"]\
         ],\
         "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@bigslycat/prettier", [\
+      ["workspace:packages/prettier", {\
+        "packageLocation": "./packages/prettier/",\
+        "packageDependencies": [\
+          ["@bigslycat/prettier", "workspace:packages/prettier"],\
+          ["prettier", "npm:3.3.2"],\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
+        ],\
+        "linkType": "SOFT"\
       }]\
     ]],\
     ["@nodelib/fs.scandir", [\
@@ -321,6 +338,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["bigslycat", "workspace:."],\
+          ["@bigslycat/prettier", "workspace:packages/prettier"],\
           ["@yarnpkg/sdks", "npm:3.1.3"],\
           ["prettier", "npm:3.3.2"],\
           ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
