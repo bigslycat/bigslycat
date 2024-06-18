@@ -1,7 +1,7 @@
 // @ts-check
 
 /** @type {import("prettier").Config} */
-const config = {
+export const config = {
   experimentalTernaries: true,
   printWidth: 80,
   tabWidth: 2,
@@ -21,5 +21,3 @@ const config = {
   embeddedLanguageFormatting: 'auto',
   singleAttributePerLine: false,
 }
-
-export default config
