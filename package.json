@@ -6,6 +6,10 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "types": "tsc --noEmit",
+    "lint": "eslint ."
+  },
   "devDependencies": {
     "@bigslycat/eslint": "workspace:^",
     "@bigslycat/prettier": "workspace:^",
