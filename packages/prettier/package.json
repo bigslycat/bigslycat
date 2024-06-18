@@ -8,10 +8,10 @@
   "type": "module",
   "files": [
     "src",
-    "prettier.config.d.ts"
+    "config.d.ts"
   ],
-  "main": "src/prettier.config.js",
-  "types": "prettier.config.d.ts",
+  "main": "src/config.js",
+  "types": "config.d.ts",
   "devDependencies": {
     "prettier": "^3.3.2",
     "typescript": "^5.4.5"
