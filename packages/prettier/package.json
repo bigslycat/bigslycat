@@ -8,13 +8,17 @@
   "type": "module",
   "files": [
     "src",
-    "config.d.ts"
+    "config.d.ts",
+    "README.md"
   ],
+  "bin": {
+    "init-prettier": "./src/init.js"
+  },
   "main": "src/config.js",
   "types": "config.d.ts",
   "devDependencies": {
     "prettier": "^3.3.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.2"
   },
   "license": "MIT"
 }

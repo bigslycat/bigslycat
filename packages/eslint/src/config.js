@@ -2,8 +2,6 @@
 
 import { configs } from 'typescript-eslint'
 import prettier from 'eslint-plugin-prettier/recommended'
-
-// @ts-expect-error
 import hooks from 'eslint-plugin-react-hooks'
 
 /** @type {import("typescript-eslint").ConfigWithExtends[]} */
