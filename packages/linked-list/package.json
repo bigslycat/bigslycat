@@ -3,7 +3,7 @@
   "description": "My linked list implementation",
   "version": "1.0.2",
   "homepage": "https://github.com/bigslycat/bigslycat/tree/main/packages/linked-list",
-  "repository": "bigslycat/bigslycat",
+  "repository": "git@github.com:bigslycat/bigslycat.git",
   "publishConfig": {
     "access": "public"
   },

@@ -3,10 +3,7 @@
   "private": true,
   "packageManager": "yarn@4.3.0",
   "homepage": "https://github.com/bigslycat/bigslycat",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:bigslycat/bigslycat.git"
-  },
+  "repository": "git@github.com:bigslycat/bigslycat.git",
   "type": "module",
   "workspaces": [
     "packages/*"
