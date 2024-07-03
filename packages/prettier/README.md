@@ -12,8 +12,24 @@ npm i -D @bigslycat/prettier prettier
 yarn add -D @bigslycat/prettier prettier
 ```
 
-Init:
+### Init config
 
 ```sh
-init-prettier
+npx init-prettier
+# or
+yarn init-prettier
+```
+
+### Manual init
+
+```sh
+touch prettier.config.js
+```
+
+#### prettier.config.js
+
+```js
+// @ts-check
+
+export { config as default } from '@bigslycat/prettier'
 ```
