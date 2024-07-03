@@ -26,6 +26,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@bigslycat/linked-list@workspace:packages/linked-list":
+  version: 0.0.0-use.local
+  resolution: "@bigslycat/linked-list@workspace:packages/linked-list"
+  dependencies:
+    typescript: "npm:^5.5.3"
+  languageName: unknown
+  linkType: soft
+
 "@bigslycat/prettier@workspace:^, @bigslycat/prettier@workspace:packages/prettier":
   version: 0.0.0-use.local
   resolution: "@bigslycat/prettier@workspace:packages/prettier"
