@@ -2,6 +2,12 @@
   "name": "@bigslycat/prettier",
   "description": "My prettier config",
   "version": "1.1.2",
+  "homepage": "https://github.com/bigslycat/bigslycat/tree/main/packages/prettier",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bigslycat/bigslycat.git",
+    "directory": "packages/prettier"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -23,6 +29,11 @@
   },
   "peerDependencies": {
     "prettier": "^3.3.2"
+  },
+  "author": {
+    "name": "Pavel Tereschenko",
+    "email": "bigslycat@protonmail.com",
+    "url": "https://github.com/bigslycat"
   },
   "license": "MIT"
 }
