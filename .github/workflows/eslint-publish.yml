@@ -17,8 +17,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 22
-      - run: yarn rebuild
-      - run: yarn lint
+      - name: Rebuild
+        run: yarn rebuild
+      - name: Check
+        run: yarn lint
 
   types:
     runs-on: ubuntu-latest
@@ -27,8 +29,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 22
-      - run: yarn rebuild
-      - run: yarn types
+      - name: Rebuild
+        run: yarn rebuild
+      - name: Check
+        run: yarn types
 
   publish-npm:
     needs:
@@ -40,8 +44,14 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 22
-          registry-url: https://registry.npmjs.org/
-      - run: yarn rebuild
-      - run: yarn workspace @bigslycat/eslint npm publish
+      - name: Setup .yarnrc.yml
+        run: |
+          yarn config set npmScopes.my-org.npmRegistryServer "https://registry.npmjs.org"
+          yarn config set npmScopes.my-org.npmAlwaysAuth true
+          yarn config set npmScopes.my-org.npmAuthToken $NPM_AUTH_TOKEN
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: Rebuild
+        run: yarn rebuild
+      - name: Publish
+        run: yarn workspace @bigslycat/eslint npm publish
