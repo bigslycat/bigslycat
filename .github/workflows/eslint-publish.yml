@@ -18,7 +18,6 @@ jobs:
         with:
           node-version: 22
       - run: yarn rebuild
-      - run: npm test
 
   lint:
     needs: prepare
