@@ -19,6 +19,7 @@
   "main": "lib/linked-list.js",
   "types": "lib/linked-list.d.ts",
   "scripts": {
+    "prepack": "yarn build",
     "build": "tsc"
   },
   "devDependencies": {
