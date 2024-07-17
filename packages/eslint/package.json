@@ -25,12 +25,12 @@
   "dependencies": {
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react-hooks": "5.1.0-rc-fb9a90fa48-20240614",
-    "typescript-eslint": "^7.15.0"
+    "typescript-eslint": "^7.16.1"
   },
   "devDependencies": {
-    "@types/node": "^20.14.9",
-    "eslint": "^9.6.0",
-    "prettier": "^3.3.2",
+    "@types/node": "^20.14.11",
+    "eslint": "^9.7.0",
+    "prettier": "^3.3.3",
     "typescript": "^5.5.3"
   },
   "peerDependencies": {
