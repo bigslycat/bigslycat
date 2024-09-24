@@ -1,0 +1,35 @@
+{
+  "name": "@bigslycat/wt-pool",
+  "description": "Node.js worker_threads pool",
+  "version": "1.0.0",
+  "homepage": "https://github.com/bigslycat/bigslycat/tree/main/packages/wt-pool",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigslycat/bigslycat.git",
+    "directory": "packages/wt-pool"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "main": "lib/wt-pool.js",
+  "types": "lib/wt-pool.d.ts",
+  "scripts": {
+    "prepack": "yarn wt-pool:build",
+    "wt-pool:types": "tsc --noEmit",
+    "wt-pool:build": "tsc --project tsconfig.build.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  },
+  "author": {
+    "name": "Pavel Tereschenko",
+    "email": "bigslycat@protonmail.com",
+    "url": "https://github.com/bigslycat"
+  },
+  "license": "MIT"
+}

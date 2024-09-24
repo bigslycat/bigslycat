@@ -4,7 +4,8 @@
   "references": [
     { "path": "./packages/eslint" },
     { "path": "./packages/linked-list" },
-    { "path": "./packages/prettier" }
+    { "path": "./packages/prettier" },
+    { "path": "./packages/wt-pool" }
   ],
   "compilerOptions": {
     "noEmit": true
