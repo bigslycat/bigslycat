@@ -13,7 +13,7 @@ __metadata:
     eslint: "npm:^9.11.1"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-prettier: "npm:^5.2.1"
-    eslint-plugin-react-hooks: "npm:5.1.0-rc-fb9a90fa48-20240614"
+    eslint-plugin-react-hooks: "npm:5.1.0-rc-04bd67a4-20240924"
     prettier: "npm:^3.3.3"
     typescript: "npm:^5.6.2"
     typescript-eslint: "npm:^8.7.0"
@@ -387,9 +387,6 @@ __metadata:
     "@bigslycat/prettier": "workspace:^"
     "@types/node": "npm:^22.6.1"
     eslint: "npm:^9.11.1"
-    eslint-config-prettier: "npm:^9.1.0"
-    eslint-plugin-prettier: "npm:^5.2.1"
-    eslint-plugin-react-hooks: "npm:5.1.0-rc-04bd67a4-20240924"
     husky: "npm:^9.1.6"
     prettier: "npm:^3.3.3"
     typescript: "npm:^5.6.2"
@@ -539,15 +536,6 @@ __metadata:
   peerDependencies:
     eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
   checksum: 10c0/e2565a3383cf5389a1dd9f8d2993964d3f4eeb3e3a91de1d0be21053a38e912798671ad0c39c7f66a5fce025c313e2b1b86ff25c3d67428ec1a9933f3f7455f9
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-react-hooks@npm:5.1.0-rc-fb9a90fa48-20240614":
-  version: 5.1.0-rc-fb9a90fa48-20240614
-  resolution: "eslint-plugin-react-hooks@npm:5.1.0-rc-fb9a90fa48-20240614"
-  peerDependencies:
-    eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
-  checksum: 10c0/e27a8073a19d8411cb1cbbd2a935d0f5ec824efb7fd17d907df5c71df47ace9faa9c08c0e8f6db627b62db202a146ff111e6b3067e31773af0b41d15a34ba956
   languageName: node
   linkType: hard
 
