@@ -1,7 +1,7 @@
 {
   "name": "bigslycat",
   "private": true,
-  "packageManager": "yarn@4.3.0",
+  "packageManager": "yarn@4.5.0",
   "homepage": "https://github.com/bigslycat/bigslycat",
   "repository": {
     "type": "git",
@@ -19,10 +19,14 @@
   "devDependencies": {
     "@bigslycat/eslint": "workspace:^",
     "@bigslycat/prettier": "workspace:^",
+    "@swc/core": "^1.7.28",
     "@types/node": "^22.6.1",
+    "@yarnpkg/pnpify": "^4.1.2",
+    "@yarnpkg/sdks": "^3.2.0",
     "eslint": "^9.11.1",
     "husky": "^9.1.6",
     "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.7.0"
   },
