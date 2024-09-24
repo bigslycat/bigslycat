@@ -19,8 +19,9 @@
   "main": "lib/linked-list.js",
   "types": "lib/linked-list.d.ts",
   "scripts": {
+    "types": "tsc --noEmit",
     "prepack": "yarn build",
-    "build": "tsc"
+    "build": "rm -rf lib && tsc --project tsconfig.build.json"
   },
   "devDependencies": {
     "typescript": "^5.6.2"
