@@ -25,20 +25,22 @@
   "dependencies": {
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react-hooks": "5.1.0-rc-04bd67a4-20240924",
-    "typescript-eslint": "^8.7.0"
+    "eslint-plugin-react-hooks": "5.1.0-rc.1"
   },
   "devDependencies": {
-    "@types/node": "^22.6.1",
-    "eslint": "^9.11.1",
-    "prettier": "^3.3.3",
-    "typescript": "^5.6.2"
+    "@bigslycat/prettier": "workspace:^",
+    "@types/node": "^22.10.1",
+    "eslint": "^9.16.0",
+    "prettier": "^3.4.1",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.16.0"
   },
   "peerDependencies": {
     "@bigslycat/prettier": "workspace:^",
     "eslint": "^9.5.0",
     "prettier": "^3.3.2",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^8.16.0"
   },
   "author": {
     "name": "Pavel Tereschenko",

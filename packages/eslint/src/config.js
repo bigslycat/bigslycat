@@ -7,7 +7,14 @@ import hooks from 'eslint-plugin-react-hooks'
 /** @type {import("typescript-eslint").ConfigWithExtends[]} */
 export const config = [
   {
-    ignores: ['.yarn/', '**/node_modules/', '**/lib/', '**/build/', '**/dist/'],
+    ignores: [
+      '.yarn/',
+      '.pnp.*',
+      '**/node_modules/',
+      '**/lib/',
+      '**/build/',
+      '**/dist/',
+    ],
   },
 
   configs.base,
