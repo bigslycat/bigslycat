@@ -23,8 +23,8 @@
   "main": "src/config.js",
   "types": "config.d.ts",
   "devDependencies": {
-    "@types/node": "^22.10.1",
-    "prettier": "^3.4.1",
+    "@types/node": "^22.10.2",
+    "prettier": "^3.4.2",
     "typescript": "^5.7.2"
   },
   "peerDependencies": {
