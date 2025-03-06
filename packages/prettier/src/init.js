@@ -1,7 +1,7 @@
 // @ts-check
 
-import { copyFileSync } from 'fs'
-import { resolve } from 'path/posix'
+import { copyFileSync } from 'node:fs'
+import { resolve } from 'node:path'
 
 copyFileSync(
   resolve(import.meta.dirname, 'initial-config.js'),
