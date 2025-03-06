@@ -7,9 +7,9 @@ My ESLint config.
 Install:
 
 ```sh
-npm i -D @bigslycat/eslint @bigslycat/prettier eslint prettier typescript
+npm i -D @bigslycat/eslint @bigslycat/prettier eslint prettier typescript typescript-eslint
 # or
-yarn add -D @bigslycat/eslint @bigslycat/prettier eslint prettier typescript
+yarn add -D @bigslycat/eslint @bigslycat/prettier eslint prettier typescript typescript-eslint
 ```
 
 ## Init config
