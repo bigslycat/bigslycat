@@ -23,17 +23,17 @@
   "main": "src/config.js",
   "types": "config.d.ts",
   "dependencies": {
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react-hooks": "5.1.0"
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react-hooks": "5.2.0"
   },
   "devDependencies": {
     "@bigslycat/prettier": "workspace:^",
-    "@types/node": "^22.10.2",
-    "eslint": "^9.17.0",
-    "prettier": "^3.4.2",
-    "typescript": "^5.7.2",
-    "typescript-eslint": "^8.18.2"
+    "@types/node": "^22.13.9",
+    "eslint": "^9.21.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0"
   },
   "peerDependencies": {
     "@bigslycat/prettier": "workspace:^",
