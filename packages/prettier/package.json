@@ -1,7 +1,7 @@
 {
   "name": "@bigslycat/prettier",
   "description": "My prettier config",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "homepage": "https://github.com/bigslycat/bigslycat/tree/main/packages/prettier",
   "repository": {
     "type": "git",
