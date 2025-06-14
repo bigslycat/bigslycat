@@ -1,7 +1,7 @@
 {
   "name": "bigslycat",
   "private": true,
-  "packageManager": "yarn@4.7.0",
+  "packageManager": "yarn@4.9.2",
   "homepage": "https://github.com/bigslycat/bigslycat",
   "repository": {
     "type": "git",
