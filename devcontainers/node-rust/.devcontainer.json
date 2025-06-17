@@ -6,7 +6,8 @@
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
-      "BASE_VERSION": "${localEnv:BASE_VERSION:latest}"
+      "BASE_VERSION": "${localEnv:BASE_VERSION:0.0.2}",
+      "RUST_VERSION": "${localEnv:RUST_VERSION:1.87.0}"
     }
   },
 
@@ -28,5 +29,7 @@
     }
   },
 
-  "postCreateCommand": "sudo chown vscode:vscode /mnt/target"
+  "postCreateCommand": {
+    "Change target dir owner": "sudo chown vscode:vscode /mnt/target"
+  }
 }
