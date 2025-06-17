@@ -18,7 +18,7 @@
   "mounts": [
     {
       "type": "volume",
-      "source": "target",
+      "source": "${devcontainerId}-${localWorkspaceFolderBasename}-target",
       "target": "/mnt/target"
     }
   ],
@@ -30,6 +30,6 @@
   },
 
   "postCreateCommand": {
-    "Change target dir owner": "sudo chown vscode:vscode /mnt/target"
+    "target-dir": "sudo chown vscode:vscode /mnt/target"
   }
 }
