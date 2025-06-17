@@ -2,7 +2,7 @@
   "id": "node",
   "name": "node",
   "description": "Node.js bigslycat's personal Dev Container",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "bigslycat",
   "platforms": [
     "linux/amd64",
