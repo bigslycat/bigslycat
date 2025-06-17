@@ -15,7 +15,7 @@
   "mounts": [
     {
       "type": "volume",
-      "source": "tmp",
+      "source": "${devcontainerId}-${localWorkspaceFolderBasename}-tmp",
       "target": "/home/vscode/.tmp"
     }
   ],
@@ -49,7 +49,6 @@
   },
 
   "postCreateCommand": {
-    "Change tmp dir owner": "sudo chown vscode:vscode /home/vscode/.tmp",
-    "Create zsh history file": "touch /home/vscode/.tmp/.zsh_history"
+    "zsh-history": "sudo chown vscode:vscode /home/vscode/.tmp && touch /home/vscode/.tmp/.zsh_history"
   }
 }

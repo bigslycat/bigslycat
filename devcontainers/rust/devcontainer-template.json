@@ -2,7 +2,7 @@
   "id": "rust",
   "name": "rust",
   "description": "Rust bigslycat's personal Dev Container",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "bigslycat",
   "platforms": [
     "linux/amd64",
