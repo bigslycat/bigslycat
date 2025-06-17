@@ -16,9 +16,4 @@
       "extensions": ["github.vscode-github-actions", "GitHub.remotehub"]
     }
   }
-
-  // "postCreateCommand": {
-  //   "Change tmp dir owner": "sudo chown vscode:vscode /home/vscode/.tmp",
-  //   "Create zsh history file": "touch /home/vscode/.tmp/.zsh_history"
-  // }
 }
