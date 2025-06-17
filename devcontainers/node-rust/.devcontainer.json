@@ -6,7 +6,7 @@
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
-      "BASE_VERSION": "${localEnv:BASE_VERSION:-latest}"
+      "BASE_VERSION": "${localEnv:BASE_VERSION:latest}"
     }
   },
 
