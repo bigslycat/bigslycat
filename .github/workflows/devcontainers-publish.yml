@@ -1,4 +1,5 @@
-name: Build and Push ${{github.ref_name}} to Docker Hub
+name: Build and Push Dev Container to Docker Hub
+run-name: Build and Push ${{github.ref_name}} to Docker Hub
 
 on:
   push:
