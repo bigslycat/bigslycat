@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/refs/heads/main/schemas/devContainer.schema.json",
+
+  "name": "base",
+
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  "containerEnv": {
+    "VISUAL": "code --wait",
+    "HISTFILE": "/home/vscode/.tmp/.zsh_history"
+  },
+
+  "mounts": [
+    {
+      "type": "volume",
+      "source": "tmp",
+      "target": "/home/vscode/.tmp"
+    }
+  ],
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "remote.extensionKind": {
+          "yandex.yandex-code-assist": ["workspace"]
+        }
+      },
+      "extensions": [
+        "deerawan.vscode-faker",
+        "hilleer.yaml-plus-json",
+        "mads-hartmann.bash-ide-vscode",
+        "maptz.camelcasenavigation",
+        "mhutchie.git-graph",
+        "mikestead.dotenv",
+        "ms-azuretools.vscode-containers",
+        "ms-azuretools.vscode-docker",
+        "MS-CEINTL.vscode-language-pack-ru",
+        "redhat.vscode-yaml",
+        "streetsidesoftware.code-spell-checker-russian",
+        "streetsidesoftware.code-spell-checker",
+        "tamasfe.even-better-toml",
+        "WakaTime.vscode-wakatime",
+        "wmaurer.change-case",
+        "/home/vscode/yandex-code-assist.vsix"
+      ]
+    }
+  },
+
+  "postCreateCommand": [
+    "sudo chown vscode:vscode $HOME/.tmp",
+    "touch $HOME/.tmp/.zsh_history"
+  ]
+}

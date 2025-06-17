@@ -1,0 +1,61 @@
+format = """
+[](fg:dir)\
+[$directory ](bg:dir)\
+[](fg:#3c3836 bg:left-arrow)\
+[](fg:left-arrow) \
+"""
+
+right_format = """
+$nodejs\
+$container\
+[](fg:branch)\
+([ $git_branch ](bg:branch))\
+[](fg:tag bg:branch)\
+$git_commit\
+[](fg:shell bg:tag)\
+[ $shell](bg:shell)\
+[](fg:shell)\
+"""
+
+command_timeout = 3000
+scan_timeout = 300
+
+palette = 'main'
+
+[palettes.main]
+dir = '#3c3836'
+left-arrow = '#32658a'
+shell = '#32658a'
+branch = '#61a191'
+tag = '#3c3836'
+commit = '#32658a'
+node = '#226d36'
+docker = '#802916'
+
+[shell]
+disabled = false
+format = "$indicator"
+
+[directory]
+format = "$path"
+truncate_to_repo = false
+
+[git_branch]
+symbol = ''
+format = '$symbol $branch'
+
+[git_commit]
+tag_disabled = false
+only_detached = false
+tag_max_candidates=2
+commit_hash_length = 8
+tag_symbol = ''
+format = '([ $tag ](bg:tag))'
+
+[container]
+disabled = false
+format = '[in $name ](fg:docker)'
+
+[nodejs]
+disabled = false
+format = '[Node $version ](node)'

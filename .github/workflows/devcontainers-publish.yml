@@ -1,0 +1,46 @@
+name: Build and Push Docker Image
+
+on:
+  push:
+    tags:
+      - devcontainer-base@*
+      - devcontainer-node@*
+      - devcontainer-rust@*
+      - devcontainer-node-rust@*
+
+jobs:
+  build-base:
+    name: Build and push image
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up QEMU for multi-architecture builds
+        uses: docker/setup-qemu-action@v3
+      - name: Setup Docker buildx for multi-architecture builds
+        uses: docker/setup-buildx-action@v3
+        with:
+          use: true
+      - uses: docker/login-action@v3
+        with:
+          username: ${{github.repository_owner}}
+          password: ${{secrets.DOCKERHUB_TOKEN}}
+      - env:
+          TAG_NAME: ${{github.ref_name}}
+        run: |
+          IMAGE_NAME="${TAG_NAME%@*}"
+          IMAGE_VERSION="${TAG_NAME#*@}"
+          IMAGE_VARIANT="${IMAGE_NAME#*-}"
+          echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
+          echo "IMAGE_VERSION=$IMAGE_VERSION" >> $GITHUB_ENV
+          echo "IMAGE_VARIANT=$IMAGE_VARIANT" >> $GITHUB_ENV
+      - name: Pre-build & push
+        uses: devcontainers/ci@v0.3
+        with:
+          subFolder: ./devcontainers/${{env.IMAGE_VARIANT}}
+          imageName: ${{github.repository_owner}}/${{env.IMAGE_NAME}}
+          cacheFrom: ${{github.repository_owner}}/${{env.IMAGE_NAME}}:latest
+          imageTag: latest,${{env.IMAGE_VERSION}}
+          platform: linux/amd64,linux/amd64/v2,linux/arm64

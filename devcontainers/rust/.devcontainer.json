@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/refs/heads/main/schemas/devContainer.schema.json",
+
+  "name": "rust",
+
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "BASE_VERSION": "${localEnv:BASE_VERSION:-latest}"
+    }
+  },
+
+  "containerEnv": {
+    "CARGO_TARGET_DIR": "/mnt/target"
+  },
+
+  "mounts": [
+    {
+      "type": "volume",
+      "source": "target",
+      "target": "/mnt/target"
+    }
+  ],
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["rust-lang.rust-analyzer"]
+    }
+  },
+
+  "postCreateCommand": "sudo chown vscode:vscode /mnt/target"
+}

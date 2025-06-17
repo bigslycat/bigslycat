@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/refs/heads/main/schemas/devContainer.schema.json",
+
+  "name": "node",
+
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "BASE_VERSION": "${localEnv:BASE_VERSION:-latest}"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "arcanis.vscode-zipfs",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
